@@ -1,4 +1,4 @@
-import "./colaborador.css";
+import "./Colaborador.css";
 
 const Colaborador = ({ nome, imagem, cargo, corDeFundo }) => {
   return (
