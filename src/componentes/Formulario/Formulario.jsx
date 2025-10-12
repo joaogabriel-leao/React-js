@@ -5,7 +5,6 @@ import "./Formulario.css";
 import { useState } from "react";
 
 const Formulario = (props) => {
-  
   const aoSalvar = (evento) => {
     evento.preventDefault();
 
@@ -35,7 +34,7 @@ const Formulario = (props) => {
           obrigatorio={true}
           label="Nome"
           placeholder="Digite seu nome"
-          valor={nome}
+          valor={nome}    // input controlado, o valor do input é controlado pelo estado nome 
           aoAlterado={(valor) => setNome(valor)} // Vai atualizar o valor da função aoAlterado toda vez que algo for digitado no input do componente CampoTexto
         />
         <CampoTexto
